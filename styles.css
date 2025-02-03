@@ -1,0 +1,101 @@
+/* Reset default browser styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling: Center the chat interface on the page */
+body {
+  font-family: Arial, sans-serif;
+  background: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url(yoga.jpg);
+  background-size:cover;
+  background-position:center;
+  background-repeat: no-repeat;
+}
+
+/* Chat container styling */
+#chat-container {
+  width: 400px;
+  max-width: 90%;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Chat window: Contains all messages and is scrollable */
+#chat-window {
+  flex: 1;
+  padding: 15px;
+  overflow-y: auto;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Input area styling */
+#input-area {
+  display: flex;
+  padding: 10px;
+  background: #fafafa;
+}
+
+/* Chat input field styling */
+.chat-input {
+  flex: 1;
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Send button styling */
+.send-btn {
+  padding: 10px 15px;
+  margin-left: 10px;
+  font-size: 1em;
+  border: none;
+  background: #007bff;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.send-btn:hover {
+  background: #0056b3;
+}
+
+/* Message container styling */
+.message {
+  margin-bottom: 10px;
+  display: flex;
+  /* Ensure messages take up a portion of available width */
+  max-width: 80%;
+}
+
+/* Styling for messages coming from the bot */
+.message .bot {
+  background-color: #f1f0f0;
+  padding: 10px;
+  border-radius: 4px;
+  text-align: left;
+  /* Align to left inside the message container */
+  margin-right: auto;
+}
+
+/* Styling for messages coming from the user */
+.message .user {
+  background-color: #dcf8c6;
+  padding: 10px;
+  border-radius: 4px;
+  text-align: right;
+  /* Align to right inside the message container */
+  margin-left: auto;
+}
